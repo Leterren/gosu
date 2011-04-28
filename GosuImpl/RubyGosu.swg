@@ -619,6 +619,11 @@ namespace Gosu {
 
 // Button ID constants
 // Does not matter that it's the Mac file, %include only analyses symbols to export, not their values.
+%rename("GpLeft")   gpLeft;
+%rename("GpRight")  gpRight;
+%rename("GpUp")     gpUp;
+%rename("GpDown")   gpDown;
+%rename("GpButton") gpButton;
 %include "../Gosu/ButtonsMac.hpp"
 %init %{
     GosusDarkSide::oncePerTick = GosusDarkSide::yieldToOtherRubyThreads;
